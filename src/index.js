@@ -15,7 +15,6 @@ function Board(props) {
 
     return (
         <>
-            {/* <div className="status">{status}</div> */}
             <div className="board-row">
             {renderSquare(0)}
             {renderSquare(1)}
@@ -86,6 +85,7 @@ function Game(props) {
     );
 }
 
+// 计算赢家
 function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
